@@ -1,6 +1,8 @@
 import MonacoEditor, { OnMount, EditorProps } from "@monaco-editor/react";
 import { createATA } from "./ata";
 import { editor } from "monaco-editor";
+// import { useContext } from "react";
+// import { PlaygroundContext } from "../../PlaygroundContext";
 
 export interface EditorFile {
   name: string;
@@ -15,7 +17,6 @@ interface Props {
 }
 
 export default function Editor(props: Props) {
-
   const { file, onChange, options } = props;
 
   const handleEditorMount: OnMount = (editor, monaco) => {
