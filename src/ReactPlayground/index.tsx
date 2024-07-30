@@ -2,6 +2,7 @@ import { Allotment } from "allotment";
 import "allotment/dist/style.css";
 import Header from "./Header";
 import CodeEditor from "./CodeEditor";
+import Preview from "./Preview";
 
 export default function ReactPlayground() {
   return (
@@ -12,7 +13,7 @@ export default function ReactPlayground() {
           <CodeEditor />
         </Allotment.Pane>
         <Allotment.Pane minSize={0}>
-          <div>111</div>
+          <Preview />
         </Allotment.Pane>
       </Allotment>
     </div>
